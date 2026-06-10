@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Geist:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ffffff;
+  --color-on-primary: #2f3131;
+  --color-background: #141313;
+  --color-on-background: #e5e2e1;
+  --color-surface: #141313;
+  --color-on-surface-variant: #c4c7c8;
+  --color-surface-container: #201f1f;
+  
+  --font-body: "Inter", sans-serif;
+  --font-label: "Geist", sans-serif;
+  --font-headline: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface-variant min-h-screen flex flex-col font-body selection:bg-primary/20 selection:text-primary;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background-color: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .glass-panel:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    transition: border-color 0.2s ease-in-out;
+  }
+}

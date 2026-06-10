@@ -1,0 +1,6 @@
+{
+  "name": "RFX UI",
+  "description": "A premium digital marketplace for UI templates and an affiliate curation directory.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
